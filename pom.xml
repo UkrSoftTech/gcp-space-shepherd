@@ -36,7 +36,7 @@
         <!--<docker.image.tag>latest</docker.image.tag>-->
 
         <lombok.version>1.18.22</lombok.version>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
         <slf4j.version>1.7.24</slf4j.version>
         <google-dataflow-api.version>v1b3-rev266-1.25.0</google-dataflow-api.version>
         <beam.version>2.8.0</beam.version>
