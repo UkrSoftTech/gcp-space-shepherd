@@ -22,20 +22,20 @@
     <properties>
         <java.version>1.8</java.version>
 
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven.build.timestamp.format>yyyyMMdd-HHmmssSSS</maven.build.timestamp.format>
         <versions-maven-plugin.version>2.3</versions-maven-plugin.version>
 
         <failOnMissingWebXml>false</failOnMissingWebXml>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>1.8</java.version>
         <docker.file.name>Dockerfile</docker.file.name>
         <docker.host.url>http://localhost:2376</docker.host.url>
         <!--<docker.image.prefix>dmaidaniuk</docker.image.prefix>-->
         <!--<docker.image.tag>latest</docker.image.tag>-->
 
+        <lombok.version>1.18.22</lombok.version>
         <junit.version>4.12</junit.version>
         <slf4j.version>1.7.24</slf4j.version>
         <google-dataflow-api.version>v1b3-rev266-1.25.0</google-dataflow-api.version>
@@ -129,7 +129,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.4</version>
+            <version>${lombok.version}</version>
             <scope>provided</scope>
         </dependency>
 
@@ -167,7 +167,7 @@
                         <path>
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok</artifactId>
-                            <version>1.16.12</version>
+                            <version>${lombok.version}</version>
                         </path>
                     </annotationProcessorPaths>
                 </configuration>
