@@ -12,7 +12,7 @@ import static org.hamcrest.core.Is.is;
 @Slf4j
 public class GcsAccessServiceTest {
 
-    private GcsAccessService service = new GcsAccessService();
+    private final GcsAccessService service = new GcsAccessService();
 
     @Test
     public void testGetBucketAndFileNames() {

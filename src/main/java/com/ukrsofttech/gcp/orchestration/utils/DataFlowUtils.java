@@ -73,7 +73,7 @@ public final class DataFlowUtils {
     public static Try<Boolean> canJobRun(JobRunOptions options, Class<?> jobClass, int quitePeriod, Logger LOG)  {
         return Try.of(() -> {
             int lastPackage = jobClass.getCanonicalName().lastIndexOf(".");
-            String className = jobClass.getCanonicalName().substring(lastPackage+1, jobClass.getCanonicalName().length());
+            String className = jobClass.getCanonicalName().substring(lastPackage+1);
             Pair<JobStatus, String> jobRunning = DataFlowUtils.isJobRunning(options, className.toLowerCase(), quitePeriod);
             if (jobRunning.getKey() != DataFlowUtils.JobStatus.Nothing) {
                 LOG.warn("job {} {} [{}min QP - {}]", className,jobRunning.getKey(),options.getQuitePeriod(),jobRunning.getValue());

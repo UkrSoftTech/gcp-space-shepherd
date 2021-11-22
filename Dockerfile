@@ -1,6 +1,6 @@
 FROM google/cloud-sdk
 
-MAINTAINER Dmytro Maidaniuk <dmytro.maidaniuk@thomsonreuters.com>
+MAINTAINER Dmytro Maidaniuk <dmytro.maidaniuk@gmail.com>
 
 WORKDIR /
 COPY /target/dataflow-governance-exec.jar .
