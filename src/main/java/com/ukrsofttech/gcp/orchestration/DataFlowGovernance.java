@@ -24,7 +24,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import springfox.documentation.swagger.web.InMemorySwaggerResourcesProvider;
-import springfox.documentation.swagger2.configuration.Swagger2DocumentationConfiguration;
+import springfox.documentation.swagger2.configuration.Swagger2DocumentationWebMvcConfiguration;
 
 /**
  * Overall DataFlowGovernance application configuration and entry-point.
@@ -47,7 +47,7 @@ import springfox.documentation.swagger2.configuration.Swagger2DocumentationConfi
         DataFlowGovernanceExceptionHandler.class,
         ThreadConfig.class,
         // Swagger configuration
-        Swagger2DocumentationConfiguration.class,
+    Swagger2DocumentationWebMvcConfiguration.class,
         InMemorySwaggerResourcesProvider.class,
         SwaggerOpenApiController.class,
         SwaggerConfig.class,
