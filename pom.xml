@@ -40,7 +40,7 @@
         <slf4j.version>1.7.32</slf4j.version>
         <google-dataflow-api.version>v1b3-rev266-1.25.0</google-dataflow-api.version>
         <beam.version>2.34.0</beam.version>
-        <springfox.swagger.version>2.9.2</springfox.swagger.version>
+        <springfox.swagger.version>2.10.5</springfox.swagger.version>
     </properties>
 
     <dependencies>
